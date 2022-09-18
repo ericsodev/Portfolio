@@ -1,5 +1,7 @@
 import "../styles/projects.css";
 import { SectionLayout } from "./layout/SectionLayout";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 
 const exampleProjects = [
   {
@@ -12,11 +14,16 @@ const exampleProjects = [
     desc: "A recreation of John Conway's popular simulation game, the  Game of Life.",
     tools: ["React.js", "Tailwind CSS"],
   },
+  {
+    title: "Mood Board",
+    desc: "A quick way to record the quality of your day and reflect on yourself.",
+    tools: ["React.js", "Tailwind CSS"],
+  },
 ];
-export function Projects(): JSX.Element {
+export function Projects({ className }: { className?: string }): JSX.Element {
   return (
     <SectionLayout title={"creations"}>
-      <div className="projects">
+      <div className={`projects ${className}`}>
         <div className="cards">
           {exampleProjects.map((proj) => {
             return <Card {...proj}></Card>;
@@ -38,6 +45,10 @@ function Card({ title, desc, tools, children }: ICard): JSX.Element {
     <div className="card">
       <div className="card-header">
         <h3 className="card-title">{title}</h3>
+        <div className="card-icons">
+          <GitHubIcon></GitHubIcon>
+          <LanguageIcon></LanguageIcon>
+        </div>
       </div>
       <div className="card-content">
         <p>{desc}</p>
