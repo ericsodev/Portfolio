@@ -22,15 +22,14 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(var(--cols), 350px);
+  grid-template-columns: repeat(var(--cols), 400px);
   gap: 1.5rem;
-  positon: relative;
 }
 
 .card {
   display: flex;
   position: relative;
-  width: 350px;
+  width: auto;
   flex-direction: column;
   background: var(--lighter-blue);
   justify-content: space-between;
@@ -55,6 +54,7 @@
     #00000010 70%
   );
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .card:hover {
