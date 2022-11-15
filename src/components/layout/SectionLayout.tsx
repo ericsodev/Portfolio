@@ -7,7 +7,7 @@ export function SectionLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <div className="section-wrapper">
+    <div className={`section-wrapper section-${title}`}>
       <div className="section hidden">
         <section className="section-header">
           <h1 className="section-title">{title}</h1>

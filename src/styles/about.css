@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
-    .about {
-        max-width: 350px;
-    }
+  .about {
+    max-width: 350px;
+  }
+}
+
+.about {
+  width: 75ch;
 }

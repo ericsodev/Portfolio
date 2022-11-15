@@ -5,7 +5,7 @@ export function Intro(): JSX.Element {
       <div className="intro-header">
         <h1 className="title-gt">&gt;</h1>
         <h1 className="title">
-          hey, its <strong>eric</strong> here
+          hey, im <strong>eric</strong>
         </h1>
       </div>
       <div className="intro-content">
