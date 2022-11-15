@@ -1,90 +1,91 @@
 @media only screen and (min-width: 0px) {
-    .section {
-        padding: 5rem 2rem;
-    }
+  .section {
+    padding: 5rem 2rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .section {
-        padding: 5rem 6rem;
-    }
+  .section {
+    padding: 5rem 6rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .section {
-        padding: 5rem 8rem;
-    }
+  .section {
+    padding: 5rem 8rem;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
-    .section {
-        padding: 5rem 10rem;
-    }
+  .section {
+    padding: 5rem 10rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .section {
-        align-content: center;
-        align-items: center;
-    }
+  .section {
+    align-content: center;
+    align-items: center;
+  }
 }
 
 .section-wrapper {
-    min-height: 80vh;
+  min-height: 80vh;
+  height: min-content;
+  scroll-snap-align: center;
 }
 
 .section {
-    scroll-snap-align: center;
-    margin: 2rem 0;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .section-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .section-header::after {
-    content: '';
-    display: block;
-    width: 200px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: var(--pale-grey);
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--pale-grey);
 }
 
 .section-title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 2.5rem;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--turq-blue);
 }
 
 .hidden {
-    transition: all 600ms;
-    transition-delay: 15ms;
-    filter: blur(2px);
-    opacity: 0;
-    transform: translateY(50%);
+  transition: all 700ms;
+  transition-delay: 15ms;
+  filter: blur(2px);
+  opacity: 0;
+  transform: translateY(60%) scaleY(0.9);
 }
 
 .show {
-    filter: blur(0);
-    opacity: 1;
-    transform: translateY(0);
+  filter: blur(0);
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
 }
 
 @media only screen and (max-width: 768px) {
-    .section-children {
-        align-items: center;
-    }
+  .section-children {
+    align-items: center;
+  }
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
