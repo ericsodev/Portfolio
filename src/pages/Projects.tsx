@@ -3,44 +3,18 @@ import { SectionLayout } from "./layout/SectionLayout";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import React from "react";
+import { projects } from "../projects";
 
-const exampleProjects = [
-  {
-    title: "Pomodoro Timer",
-    desc: "A productivity tool to help create healthy study habits.",
-    tools: ["React.js", "Chakra UI"],
-    github: "https://github.com/ericsodev/pomodoro",
-    url: "http://pomodoro.findericso.com",
-  },
-  {
-    title: "Game of Life",
-    desc: "A recreation of John Conway's popular simulation game, the  Game of Life.",
-    tools: ["React.js", "Tailwind CSS"],
-    github: "https://github.com/ericsodev/ConwaysGameofLife",
-  },
-  {
-    title: "Mood Board",
-    desc: "A quick way to record the quality of your day and reflect on yourself.",
-    tools: ["React.js", "Tailwind CSS"],
-    github: "https://github.com/ericsodev/Moodboard",
-  },
-  {
-    title: "CHIP 8 Emulator",
-    desc: "An emulator used to play classic games such Pacman, Space Invaders, and Pong.",
-    tools: ["Java", "JavaFX"],
-    github: "https://github.com/ericsodev/chip8emu",
-  },
-];
 export function Projects({ className }: { className?: string }): JSX.Element {
   return (
     <SectionLayout title={"creations"}>
       <div className={`projects ${className}`}>
         <div
-          className="cards"
+          className="cards hidden"
           onMouseMove={handleCardHover}
           onMouseLeave={handleCardExit}
         >
-          {exampleProjects.map((proj, i) => {
+          {projects.map((proj, i) => {
             return <Card key={i} index={i} {...proj}></Card>;
           })}
         </div>
@@ -50,7 +24,7 @@ export function Projects({ className }: { className?: string }): JSX.Element {
 }
 
 function handleCardHover(e: React.MouseEvent) {
-  for (let i = 0; i < exampleProjects.length; i++) {
+  for (let i = 0; i < projects.length; i++) {
     const card = document.getElementById(`card-${i}`);
     const rect = card?.getBoundingClientRect();
     if (!rect) continue;
@@ -60,7 +34,7 @@ function handleCardHover(e: React.MouseEvent) {
 }
 
 function handleCardExit(e: React.MouseEvent) {
-  for (let i = 0; i < exampleProjects.length; i++) {
+  for (let i = 0; i < projects.length; i++) {
     const card = document.getElementById(`card-${i}`);
     card?.style.setProperty("--mouse-x", ``);
     card?.style.setProperty("--mouse-y", ``);

@@ -30,7 +30,7 @@
 }
 
 .section-wrapper {
-  min-height: 80vh;
+  min-height: 90vh;
   height: min-content;
   scroll-snap-align: center;
 }
@@ -43,6 +43,7 @@
 }
 
 .section-header {
+  align-self: start;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -65,8 +66,8 @@
 }
 
 .hidden {
-  transition: all 700ms;
-  transition-delay: 15ms;
+  transition: all 400ms;
+  transition-delay: 30ms;
   filter: blur(2px);
   opacity: 0;
   transform: translateY(60%) scaleY(0.9);

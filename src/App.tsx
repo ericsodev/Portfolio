@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
-import { Intro } from "./components/Intro";
+import { Intro } from "./pages/Intro";
+import { About } from "./pages/About";
+import { Projects } from "./pages/Projects";
+import { Present } from "./pages/Present";
 import "./App.css";
-import { About } from "./components/About";
-import { Projects } from "./components/Projects";
-import { Current } from "./components/Present";
 
 function App() {
   const ref = useRef(null);
@@ -12,8 +12,6 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
         }
       });
     });
@@ -25,7 +23,7 @@ function App() {
       <Intro></Intro>
       <About></About>
       <Projects></Projects>
-      <Current></Current>
+      <Present></Present>
     </div>
   );
 }
