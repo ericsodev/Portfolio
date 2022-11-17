@@ -1,9 +1,48 @@
-@media screen and (max-width: 768px) {
-  .about {
-    max-width: 350px;
+@media screen and (min-width: 0px) {
+  .skills {
+    --cols: 3;
+    --row-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .skills {
+    --cols: 4;
+    --row-gap: 1rem;
   }
 }
 
 .about {
-  width: 75ch;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.about-intro {
+  max-width: 75ch;
+}
+
+.skills {
+  display: grid;
+  width: fit-content;
+  gap: var(--row-gap) 2.5rem;
+  grid-template-columns: repeat(var(--cols), 1fr);
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.skills li {
+  margin-top: 0.25rem;
+}
+
+.skills .iconWrapper {
+  margin-right: 0.5rem;
+}
+
+.skills-heading {
+  grid-column: 1 / -1;
+  color: var(--turq-blue);
 }

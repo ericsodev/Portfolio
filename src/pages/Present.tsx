@@ -1,7 +1,7 @@
 import { SectionLayout } from "./layout/SectionLayout";
 import "../styles/present.css";
 
-export function Current(): JSX.Element {
+export function Present(): JSX.Element {
   return (
     <SectionLayout title={"present"}>
       <div className="present hidden">

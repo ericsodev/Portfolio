@@ -1,9 +1,38 @@
+@media only screen and (min-width: 0px) {
+  .intro {
+    padding: 5rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    padding: 5rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    padding: 5rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .intro {
+    padding: 5rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    align-content: center;
+    align-items: center;
+  }
+}
 .intro {
   scroll-snap-align: center;
   width: 100%;
   height: 80vh;
   margin: 2rem 0;
-  padding: 5rem 10rem;
 }
 
 .intro-header {
