@@ -1,24 +1,31 @@
+@media screen and (max-width: 400px) {
+  .cards {
+    --cols-size: 100%;
+  }
+}
 @media only screen and (min-width: 0) {
   .cards {
     --cols: 1;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .cards {
     --cols: 2;
+    --cols-size: 400px;
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1400px) {
   .cards {
     --cols: 3;
+    --cols-size: 400px;
   }
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(var(--cols), 400px);
+  grid-template-columns: repeat(var(--cols), var(--cols-size));
   gap: 1.5rem;
 }
 
@@ -34,6 +41,9 @@
   gap: 1rem;
 }
 
+.projects {
+  align-self: start;
+}
 /* prettier-ignore */
 .card::after {
     border-radius: 10px;

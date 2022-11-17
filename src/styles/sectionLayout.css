@@ -52,7 +52,7 @@
 .section-header::after {
   content: "";
   display: block;
-  width: 200px;
+  width: clamp(100px, 35vw, 400px);
   height: 1px;
   margin-left: 20px;
   background-color: var(--pale-grey);

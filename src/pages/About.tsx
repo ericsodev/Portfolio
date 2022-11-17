@@ -37,7 +37,7 @@ function SkillCategorySection({
   skillCategory,
 }: SkillCategoryProps): JSX.Element {
   return (
-    <div>
+    <div className="skill-category">
       <h3>/ {skillCategory.title} /</h3>
       <ul>
         {skillCategory.skills.map((v, i) => {
