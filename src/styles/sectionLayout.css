@@ -30,9 +30,7 @@
 }
 
 .section-wrapper {
-  min-height: 90vh;
   height: min-content;
-  scroll-snap-align: center;
 }
 
 .section {

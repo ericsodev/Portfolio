@@ -44,6 +44,7 @@
 }
 
 .skills li {
+  transition: all 150ms 50ms;
   margin-top: 0.25rem;
 }
 
@@ -56,6 +57,14 @@
   color: var(--turq-blue);
 }
 .skills-category {
-  padding: 0.25rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.skills-category-title {
+  margin-bottom: 1rem;
+}
+
+.skills-category:hover li {
+  transition: all 300ms 50ms;
+  margin-top: 0.5rem;
 }
