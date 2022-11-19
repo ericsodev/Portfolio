@@ -56,10 +56,10 @@
   left: 0;
   background: radial-gradient(
     circle at var(--mouse-x) var(--mouse-y),
-    #ffffff10,
-    #00000010 70%
+    #ffffff20,
+    #00000010 60%
   );
-  opacity: 0.5;
+  opacity: 0.6;
   pointer-events: none;
 }
 

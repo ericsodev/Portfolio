@@ -5,6 +5,5 @@
   width: 100%;
   margin: 0;
   background: var(--dark-blue);
-  /* scroll-snap-type: y mandatory; */
   gap: 100px;
 }

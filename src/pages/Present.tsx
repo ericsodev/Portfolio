@@ -3,7 +3,7 @@ import "../styles/present.css";
 
 export function Present(): JSX.Element {
   return (
-    <SectionLayout title={"present"}>
+    <SectionLayout title={"present"} id="present">
       <div className="present hidden">
         <div className="present-section">
           <h3 className="present-section-title">/ currently learning /</h3>
