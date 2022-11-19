@@ -1,10 +1,10 @@
-import { SkillCategory, skills } from "../skills";
+import { SkillCategory, skills } from "../data/skills";
 import "../styles/about.css";
 import { SectionLayout } from "./layout/SectionLayout";
 
 export function About(): JSX.Element {
   return (
-    <SectionLayout title={"about me"}>
+    <SectionLayout title={"about me"} id="about">
       <div className="about hidden">
         <div className="about-intro">
           <p className="p-1">
@@ -22,7 +22,10 @@ export function About(): JSX.Element {
         <div className="skills">
           <h2 className="skills-heading">skills</h2>
           {skills.map((v, _) => (
-            <SkillCategorySection skillCategory={v}></SkillCategorySection>
+            <SkillCategorySection
+              key={v.title}
+              skillCategory={v}
+            ></SkillCategorySection>
           ))}
         </div>
       </div>
@@ -37,8 +40,8 @@ function SkillCategorySection({
   skillCategory,
 }: SkillCategoryProps): JSX.Element {
   return (
-    <div className="skill-category">
-      <h3>/ {skillCategory.title} /</h3>
+    <div className="skills-category">
+      <h3 className="skills-category-title">/ {skillCategory.title} /</h3>
       <ul>
         {skillCategory.skills.map((v, i) => {
           return (

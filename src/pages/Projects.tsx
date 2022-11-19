@@ -3,11 +3,11 @@ import { SectionLayout } from "./layout/SectionLayout";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import React from "react";
-import { projects } from "../projects";
+import { projects } from "../data/projects";
 
 export function Projects({ className }: { className?: string }): JSX.Element {
   return (
-    <SectionLayout title={"creations"}>
+    <SectionLayout title={"creations"} id="projects">
       <div className={`projects ${className}`}>
         <div
           className="cards hidden"
