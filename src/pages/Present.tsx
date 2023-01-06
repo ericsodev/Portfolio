@@ -8,15 +8,14 @@ export function Present(): JSX.Element {
         <div className="present-section">
           <h3 className="present-section-title">/ currently learning /</h3>
           <ul className="present-section-content">
-            <li>React-Query</li>
-            <li>Deployment on Digital Ocean</li>
-            <li>Firebase</li>
+            <li>tRPC and React Query</li>
+            <li>Using Websockets and Redis for realtime updates</li>
           </ul>
         </div>
         <div className="present-section">
           <h3 className="present-section-title">/ current projects /</h3>
           <ul className="present-section-content">
-            <li>Personalized Todo App</li>
+            <li>Paste Win &mdash; version controlled snippet sharing</li>
           </ul>
         </div>
       </div>
