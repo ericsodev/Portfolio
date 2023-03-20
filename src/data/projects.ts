@@ -16,14 +16,7 @@ export const projects: Project[] = [
   {
     title: "PasteWin",
     desc: "An easy way to share snippets of code online.",
-    tools: ["Next.js", "Chakra UI", "MongoDB"],
-    url: "https://pastewin.findericso.com",
-    github: "https://github.com/ericsodev/pastewin",
-  },
-  {
-    title: "PasteWin",
-    desc: "An easy way to share snippets of code online.",
-    tools: ["Next.js", "Chakra UI", "MongoDB"],
+    tools: ["Next.js", "tRPC", "PostgreSQL"],
     url: "https://pastewin.findericso.com",
     github: "https://github.com/ericsodev/pastewin",
   },
@@ -39,12 +32,6 @@ export const projects: Project[] = [
     tools: ["React.js", "Chakra UI"],
     github: "https://github.com/ericsodev/pomodoro",
     url: "http://pomodoro.findericso.com",
-  },
-  {
-    title: "Game of Life",
-    desc: "A recreation of John Conway's popular simulation game, the  Game of Life.",
-    tools: ["React.js", "Tailwind CSS"],
-    github: "https://github.com/ericsodev/ConwaysGameofLife",
   },
   {
     title: "Mood Board",
