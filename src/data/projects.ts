@@ -1,5 +1,18 @@
 export const projects = [
   {
+    title: "PasteWin",
+    desc: "An easy way to share snippets of code online.",
+    tools: ["Next.js", "Chakra UI", "MongoDB"],
+    url: "https://pastewin.findericso.com",
+    github: "https://github.com/ericsodev/pastewin",
+  },
+  {
+    title: "CHIP 8 Emulator (C)",
+    desc: "An emulator used to play classic games such Pacman, Space Invaders, and Pong.",
+    tools: ["C", "SDL2"],
+    github: "https://github.com/ericsodev/chip8c",
+  },
+  {
     title: "Pomodoro Timer",
     desc: "A productivity tool to help create healthy study habits.",
     tools: ["React.js", "Chakra UI"],
@@ -19,16 +32,21 @@ export const projects = [
     github: "https://github.com/ericsodev/Moodboard",
   },
   {
-    title: "CHIP 8 Emulator",
+    title: "Flappy Bird",
+    desc: "A Flappy Bird clone written in C.",
+    tools: ["C", "SDL2"],
+    github: "https://github.com/ericsodev/FlappyBird"
+  },
+  {
+    title: "CHIP 8 Emulator (Java)",
     desc: "An emulator used to play classic games such Pacman, Space Invaders, and Pong.",
     tools: ["Java", "JavaFX"],
     github: "https://github.com/ericsodev/chip8emu",
   },
   {
-    title: "PasteWin",
-    desc: "An easy way to share snippets of code online.",
-    tools: ["Next.js", "Chakra UI", "MongoDB"],
-    url: "https://pastewin.findericso.com",
-    github: "https://github.com/ericsodev/pastewin",
-  },
+    title: "Priority Todo",
+    desc: "A simple todo app that allows draggle priority reordering.",
+    tools: ["Next.js", "TailwindCSS", "PostgreSQL"],
+    github: 'https://github.com/ericsodev/simple-todo-t3'
+  }
 ];
